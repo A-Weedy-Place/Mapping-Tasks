@@ -1,6 +1,8 @@
 So we have noisy lane boundaries and need to clean them.
 
-** Part A - Smoothing
+---
+
+## Part A - Smoothing
 The lanes are randomized from sensor noise. Need to smooth them 
 
 BUT:
@@ -19,8 +21,9 @@ So:
 
 - Used proper distance calculation (point to line segment) instead of just point-to-point because that's more accurate for checking deviation.
 
+---
 
-** Part B - Continuity Check
+## Part B - Continuity Check
 Two lanes should connect at a junction. Check if they actually do:
 
 C0 (position): Just measure the gap between end of lane A and start of lane B. Should be < 0.1m.
